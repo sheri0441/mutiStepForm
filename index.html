@@ -137,7 +137,7 @@
           <h2>Pick add-ons</h2>
           <p>Add-ons help enhance your gaming experience.</p>
           <section class="optionGroup">
-            <input type="checkbox" name="addOns" class="optionInput" id="online">
+            <input type="checkbox" name="addOns" class="optionInput" id="online" checked>
             <label class="option" for="online">
               <div class="checkBox"></div>
               <div>
@@ -147,7 +147,7 @@
               <p class="addPrice">+$1/mo</p>
             </label>
 
-            <input type="checkbox" name="addOns" class="optionInput" id="storage">
+            <input type="checkbox" name="addOns" class="optionInput" id="storage" checked>
             <label class="option" for="storage">
               <div class="checkBox"></div>
               <div>
@@ -188,13 +188,25 @@
             </div>
 
             <div class="addOn_billing">
+              <div id="0">
+                <p>Online service</p>
+                <p class="addOn_billing-price">
+                  +$1/mo
+                </p>
+              </div>
+              <div id="1">
+                <p>Larger storage</p>
+                <p class="addOn_billing-price">
+                  +$2/mo
+                </p>
+              </div>
               
             </div>
           </section>
 
           <div class="total">
             <p>Total (<span id="totalPayment">per month</span>)</p>
-            <p id="totalPrice">+$9/mo</p>
+            <p id="totalPrice">+$12/mo</p>
           </div>
 
           <section class="bottomTap">

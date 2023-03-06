@@ -185,6 +185,14 @@ const changePrice = () => {
 }
 
 monthBtn.addEventListener('change', changePrice);
+changeBtn.addEventListener('click',() => {
+    if(monthBtn.checked){
+        monthBtn.checked = false;   
+    } else {
+        monthBtn.checked = true;
+    }
+    changePrice()
+} );
 
 
 // select package and updating the billing
@@ -196,17 +204,6 @@ for(let i=0 ; i<plan_radio.length; i++){
         finalPrice();
     })
 }
-
-
-// change btn for finihin step 
-
-changeBtn.addEventListener('click', () =>{
-        numLabal[1].classList.add('current');
-        formSteps[1].style.display = 'flex';
-        formSteps[3].style.display = 'none';
-        numLabal[3].classList.remove('current');
-})
-
 
 //add on checkbox
 

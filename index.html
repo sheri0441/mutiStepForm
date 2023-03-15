@@ -50,41 +50,41 @@
       </div>
     </aside>
 
-    <article class="inputField">
-      <form action="">
+    <div class="inputField">
+      <form>
         <article class="oneStep formSteps">
           <h2>Personal info</h2>
           <p>Please provide your name, email address, and phone number.</p>
-          <section class="inputDiv">
+          <div class="inputDiv">
             <div>
               <label for="name">Name</label>
               <p class="error"></p>
             </div>
             <input type="text" name="name" id="name" class="input" placeholder="e.g. Stepen King" pattern="[A-Za-z, ]{3,}" >
-          </section>
-          <section class="inputDiv">
+          </div>
+          <div class="inputDiv">
             <div>
               <label for="email">Email Address</label>
               <p class="error"></p>
             </div>
             <input type="email" name="email" id="email" class="input" placeholder="e.g. Stepenking@lorem.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-          </section>
-          <section class="inputDiv">
+          </div>
+          <div class="inputDiv">
             <div>
               <label for="telephone">Phone Number</label>
               <p class="error"></p>
             </div>
             <input type="tel" name="telephone" id="telephone" class="input" placeholder="e.g. +1 234 567 890" pattern="[0-9,+]{11,}">
-          </section>
-          <section class="bottomTap">
+          </div>
+          <div class="bottomTap">
             <button class="nextBtn">Next Step</button>
-          </section>
+          </div>
         </article>
 
         <article class="twoStep formSteps">
           <h2>Select your plan</h2>
           <p>You have the option of monthly or yearly billing.</p>
-          <section class="plan">
+          <div class="plan">
             <input class="plan_radio" type="radio" name="plan" id="arcade" checked>
             <label class="plan_label" for="arcade">
               <img src="./assets/images/icon-arcade.svg" alt="">
@@ -114,29 +114,29 @@
                   <p class="freeMonths"></p>
                 </div>
               </label>
-          </section>
+          </div>
 
           
-          <section class="switchBtn">
+          <div class="switchBtn">
             <label for="paymentWay" class="toggleBtn">
               <input type="checkbox" id="paymentWay" class="paymentWay">
               <span id="mon">Monthly</span>
               <div id="switchSlider" class="switchSlider"></div>
               <span id="year">Yearly</span>
             </label>
-          </section>
+          </div>
 
-          <section class="bottomTap">
+          <div class="bottomTap">
             <button class="perBtn">Go Back</button>
             <button class="nextBtn">Next Step</button>
-          </section>
+          </div>
 
         </article>
 
         <article class="thirdStep formSteps">
           <h2>Pick add-ons</h2>
           <p>Add-ons help enhance your gaming experience.</p>
-          <section class="optionGroup">
+          <div class="optionGroup">
             <input type="checkbox" name="addOns" class="optionInput" id="online" checked>
             <label class="option" for="online">
               <div class="checkBox"></div>
@@ -166,19 +166,19 @@
               </div>
               <p class="addPrice">+$2/mo</p>
             </label>
-          </section>
+          </div>
 
 
-          <section class="bottomTap">
+          <div class="bottomTap">
             <button class="perBtn">Go Back</button>
             <button class="nextBtn">Next Step</button>
-          </section>
+          </div>
         </article>
 
         <article class="fourthStep formSteps">
           <h2>Finishing up</h2>
           <p>Double-check everything looks OK before confirming.</p>
-          <section class="billing">
+          <div class="billing">
             <div class="plain_billing">
               <div>
                 <p class="planName"><span>Arcade</span> <span>(Monthly)</span></p>
@@ -202,17 +202,17 @@
               </div>
               
             </div>
-          </section>
+          </div>
 
           <div class="total">
             <p>Total (<span id="totalPayment">per month</span>)</p>
             <p id="totalPrice">+$12/mo</p>
           </div>
 
-          <section class="bottomTap">
+          <div class="bottomTap">
             <button class="perBtn">Go Back</button>
             <button class="confirm">Confirm</button>
-          </section>
+          </div>
         </article>
       </form>
 
@@ -223,7 +223,7 @@
           we hope you have fun using our platform. If you ever need support, please feel free to email us at
           support@loremgaming.com</p>
       </article>
-    </article>
+    </div>
 
   </main>
   
